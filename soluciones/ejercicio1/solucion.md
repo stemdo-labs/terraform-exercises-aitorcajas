@@ -10,6 +10,7 @@ resource "azurerm_storage_account" "example" {
 }
 ```
 <br>
+
 Una vez hecho esto hay que configurar las variables de entorno de la siguiente manera:
 ```
 export ARM_CLIENT_ID="<APPID_VALUE>"
