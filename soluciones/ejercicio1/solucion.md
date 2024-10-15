@@ -25,4 +25,5 @@ El segundo se encuentra dentro del `key vault` de nuestro portal de Azure en la 
 El tercero y el cuarto nos lo muestra el login que he nombrado antes.<br>
 <br>
 
-Para terminar usamos `terraform plan` y `terraform aplly` y nos dirigimos a nuestro portal de Azure para comprobar que nuestra cuenta de almacenamiento se ha creado.
+Para terminar usamos `terraform plan` y `terraform aplly` y nos dirigimos a nuestro portal de Azure para comprobar que nuestra cuenta de almacenamiento se ha creado.<br>
+<img src="../img/cuenta_alm.png" alt="captura"/>
