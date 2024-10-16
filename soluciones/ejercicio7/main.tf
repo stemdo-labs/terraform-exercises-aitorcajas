@@ -30,6 +30,7 @@ module "subnets" {
   vnet_name = var.vnet_name
   resource_group_name = var.existent_resource_group_name
   subnets = var.subnets
+  depends_on = [ module.vnet ]
 }
 
 module "nsg" {
