@@ -6,7 +6,7 @@ variable "vnet_name" {
   type = string
   validation {
     condition     = length(var.vnet_name) > 0 && var.vnet_name != null && can(regex("^vnet[a-z]{3,}tfexercise[0-9]{2,}$", var.vnet_name))
-    error_message = "La variable vnet_name está vacía o es nula."
+    error_message = "La variable vnet_name está vacía o es nula o no sigue la sintaxis que debería"
   }
 }
 

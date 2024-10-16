@@ -7,7 +7,7 @@ resource "azurerm_subnet" "subnet" {
 }
 
 module "nsg" {
-  count = var.subnets > 0 ? var.subnets : 0
+  count = var.subnets > 0 ? 1 : 0
   source = "./modules/nsg"
   name_nsg = var.name_nsg
   resource_group_name  = var.resource_group_name
