@@ -1,5 +1,5 @@
 existent_resource_group_name = "rg-acajas-dvfinlab"
-vnet_name                    = "vnetacajastfexercise04"
+vnet_name                    = "vnetacajastfexercise06"
 vnet_address_space           = ["10.0.0.0/16"]
 owner_tag                    = "Cajas"
 environment_tag              = "dev"

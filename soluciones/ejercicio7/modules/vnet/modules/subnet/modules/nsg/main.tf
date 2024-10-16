@@ -4,7 +4,7 @@ resource "azurerm_network_security_group" "nsg" {
   resource_group_name = var.resource_group_name
 }
 
-resource "azurerm_subnet_network_security_group_association" "example" {
+resource "azurerm_subnet_network_security_group_association" "nsg-group" {
   subnet_id                 = var.id
   network_security_group_id = azurerm_network_security_group.nsg.id
 }
