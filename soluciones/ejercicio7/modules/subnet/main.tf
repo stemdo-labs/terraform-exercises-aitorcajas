@@ -6,11 +6,6 @@ resource "azurerm_subnet" "subnet" {
   address_prefixes     = ["10.0.${count.index+1}.0/24"]
 }
 
-module "nsg" {
-  count = var.subnets > 0 ? 1 : 0
-  source = "./modules/nsg"
-  name_nsg = var.name_nsg
-  resource_group_name  = var.resource_group_name
-  location = var.location
-  id = azurerm_subnet.subnet[0].id
+output "subnet_list" {
+  value = azurerm_subnet.subnet
 }

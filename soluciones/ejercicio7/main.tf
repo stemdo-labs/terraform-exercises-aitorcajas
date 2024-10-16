@@ -23,6 +23,22 @@ module "vnet" {
   existent_resource_group_name = var.existent_resource_group_name
   environment_tag              = var.environment_tag
   vnet_tags                    = var.vnet_tags
+}
+
+module "subnets" {
+  source = "./modules/subnet"
+  vnet_name = var.vnet_name
+  resource_group_name = var.existent_resource_group_name
   subnets = var.subnets
+  depends_on = [ module.vnet ]
+}
+
+module "nsg" {
+  count = var.subnets > 0 ? 1 : 0
+  source = "./modules/nsg"
   name_nsg = var.name_nsg
+  resource_group_name  = var.existent_resource_group_name
+  location = var.location
+  id = module.subnets.subnet_list[0].id
+  depends_on = [ module.subnets ]
 }

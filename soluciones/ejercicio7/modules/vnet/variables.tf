@@ -48,10 +48,3 @@ variable "vnet_tags" {
     error_message = "El mapeado no puede ser nulo, ni los valores de él mismo, aparte los valores no pueden estar vacíos."
   }
 }
-
-variable "subnets" {
-  type = number
-}
-variable "name_nsg" {
-  type = string
-}
