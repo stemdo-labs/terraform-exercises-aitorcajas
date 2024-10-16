@@ -9,5 +9,5 @@ variable "location" {
   type = string
 }
 variable "id" {
-  type = number
+  type = string
 }

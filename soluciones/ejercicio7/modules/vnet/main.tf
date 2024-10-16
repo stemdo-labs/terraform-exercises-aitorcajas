@@ -15,12 +15,3 @@ resource "azurerm_virtual_network" "vnet" {
         var.vnet_tags
     )
 }
-
-module "subnets" {
-  source = "./modules/subnet"
-  vnet_name = var.vnet_name
-  resource_group_name = var.existent_resource_group_name
-  subnets = var.subnets
-  name_nsg = var.name_nsg
-  location = var.location
-}
