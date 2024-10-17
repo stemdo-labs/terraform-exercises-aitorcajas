@@ -8,5 +8,5 @@ backend "azurerm" {
 }
 ```
 
-Después de esto al hacer un init te pedirá lo siguiente y deberás aceptar:
-<img src="img/ejercicio8.png" alt="captura"/>
+Después de esto al hacer un init te pedirá lo siguiente y deberás aceptar:<br>
+<img src="../img/ejercicio8.png" alt="captura"/>
