@@ -1,0 +1,1 @@
+He tenido problemas al hacer el semanal, sin querer borré el grupo de recursos que teniamos asignado en Azure y por temas de permisos no me deja crear otro, para las pruebas he estado usando las credenciales de uno de mis compañeros. Este error se verá afectado en el resto de ejercicios por el nombre de las variables.

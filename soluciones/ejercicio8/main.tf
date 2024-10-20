@@ -6,12 +6,12 @@ terraform {
         version = "3.0.0"
     }
   }
-  backend "azurerm" {
-    storage_account_name = "staacajasdvfinlab"
-    container_name = "terraform-state"
-    key = "terraform.tfstate"
-    resource_group_name = "rg-acajas-dvfinlab"
-  }
+  # backend "azurerm" {
+  #   storage_account_name = "staacajasdvfinlab"
+  #   container_name = "terraform-state"
+  #   key = "terraform.tfstate"
+  #   resource_group_name = "rg-acajas-dvfinlab"
+  # }
 }
 
 provider "azurerm" {
