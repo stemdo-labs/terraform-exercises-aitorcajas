@@ -152,4 +152,7 @@ resource "azurerm_lb_outbound_rule" "my_lboutbound_rule" {
   frontend_ip_configuration {
     name = azurerm_public_ip.public_ip.name
   }
+
+  enable_tcp_reset = true
+  idle_timeout_in_minutes = 4
 }
